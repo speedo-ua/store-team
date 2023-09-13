@@ -20,11 +20,6 @@ const TheHeader = () => {
                         <input type="text" className="header_search_input" placeholder="I'm searching.." />
                         <button type="submit" className="header_search_submit">Search</button>
                 </div>
-                    {/* <ul className="header-menu">
-                        <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/about'}>About</Link></li>
-                        <li><Link href={'/contacts'}>Contacts</Link></li>
-                    </ul> */}
 
                     <ul className="header-actions">
                         <li className="header-actions_item-languages"></li>
