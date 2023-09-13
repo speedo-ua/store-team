@@ -1,7 +1,6 @@
 import IconType from "@/components/Buttons/IconType";
 import TheGoodsTile from "@/components/TheGoodsTile";
 
-
 export default function Home() {
   return (
     <>
@@ -12,10 +11,32 @@ export default function Home() {
         <li>/ Notebooks</li>
       </ul>
     </nav>
-    <div className="page-title"><h1>Notebooks</h1></div>
+    <div className="page-title"><h1>Notebooks Acer</h1></div>
     <div className="catalog-settings">
-      <div className="catalog-settings_filter">filter</div>
-      <div className="catalog-settings_sorting">sorting</div>
+      <div className="catalog-settings_filter">
+        <div className="catalog-settings_filter-text">
+          4000 products selected
+          </div>
+          <button className="catalog-settings_btn_cancel">
+            Cancel
+          </button>
+          <button className="catalog-settings_btn_check">
+            Acer 
+            <div className="cancel_round"> 
+            <IconType type='cancel'/>
+            </div> 
+          </button>
+      </div>
+      <div className="catalog-settings_sorting">
+        <select defaultValue={"rating"}>
+          <option value="cheap">Cheap to expensive</option>
+          <option value="expensive">Expensive to cheap</option>
+          <option value="novelty">Novelty</option>
+          <option value="rating">By rating</option>
+        </select>
+        <button className="grid-two"><IconType type='grid-two'/></button>
+        <button className="grid-three"><IconType type='grid-three'/></button>
+      </div>
     </div>
     <div className="catalog-container">
       <div className="catalog-container_settings">
