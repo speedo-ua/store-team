@@ -5,4 +5,4 @@ const TheFooter = () => {
         </footer>
     )
 } 
-export {TheFooter}
+export default TheFooter

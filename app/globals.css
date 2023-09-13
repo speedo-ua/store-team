@@ -6,8 +6,14 @@
   --white_global: #fff;
   --darkgrey_global: #1c1c1c;
   --black_global: #000;
+  --black_global_20:#b5b5b5;
   --green_global: #00a046;
   --green_global_80:#00bd52;
+  --red_global: #f73f3f;
+  --yellow_global:#ffc800;
+  --blue_global: #3e77aa;
+  --width_dt: 1600px;
+
 }
 
 
@@ -28,12 +34,9 @@ header {
 }
 
 main {
-  height: 80vh;
+  min-height: 1280px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  font-weight: 700;
 }
 
 footer {
@@ -51,9 +54,12 @@ button{
   outline: none;
 }
 
+
+/* HEADER START */
+
 .header-layout{
   display: flex;
-  width: 1600px;
+  width: var(--width_dt);
   justify-content: space-between;
   align-items: center;
 }
@@ -80,8 +86,7 @@ button{
 
 .svg_fat-menu{
   margin: 0px 8px 0px 0px;
-  height: 26px;
-  width: 26px;  
+  font-size: 24px;
 }
 
 .header_search_form{
@@ -150,7 +155,138 @@ button{
 
 }
 
+.header-actions_cart {
+  color:var(--white_global);
+  font-size: 32px;
+}
+
 .header-actions_button:hover{
   background-color: rgba(255, 255, 255, 0.186);
 }
+
+/* HEADER END */
+
+
+/* MAIN LAYOUT START */
+
+.main-layout{
+  display: flex;
+  justify-content: center;
+  width: var(--width_dt);
+}
+
+/* MAIN LAYOUT END */
+
+
+/* GOODS GRID START */
+.catalog-grid{
+  display: flex;
+  max-width: 1280px;
+  margin-top: 50px;
+}
+
+.catalog-grid_item{
+  min-width: 320px;
+  max-height: 550px;
+  padding: 16px;
+  width: 25%;
+  border-top: 0.1px solid var(--black_global_20);
+  border-right: 0.1px solid var(--black_global_20);
+
+}
+
+.goods-tile{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: 500px;
+
+
+}
+
+.img_tile{
+  padding-top: 30%;
+  padding-bottom: 10%;
+
+}
+
+.tile_description{
+margin: 20px 0px 8px;
+width: 100%;
+height: 38px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.tile-price_old{
+  font-size: 14px;
+  color: var(--black_global_20);
+  text-decoration: line-through;
+  margin: 0px 0px 0px 0px;
+}
+
+.tile-price_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tile_price{
+font-size: 24px;
+color: var(--red_global);
+}
+
+.tile_cart{
+  color: var(--green_global);
+  font-size: 28px;
+}
+
+.tile-rating_block{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tile-rating{
+  display: flex;
+  margin: 0px 8px 0px 0px;
+}
+
+.star-yellow{
+  color: var(--yellow_global);
+  font-size: 14px;
+}
+
+.star-grey{
+  color: var(--black_global_20);
+  font-size: 14px;
+}
+
+.tile-rating_text{
+  font-size: 12px;
+  color: var(--blue_global);
+}
+
+.tile_delivery{
+  font-size: 12px;
+  color: var(--green_global);
+  margin: 0px 0px 4px;
+  display: flex;
+  align-items: center;
+
+}
+
+.svg_delivery{
+  margin: 0px 8px 0px 5px;
+  height: 26px;
+  width: 26px;
+  
+}
+
+.currency {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+/* GOODS GRID END */
 
