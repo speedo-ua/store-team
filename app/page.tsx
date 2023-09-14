@@ -1,5 +1,8 @@
 import IconType from "@/components/Buttons/IconType";
 import TheGoodsTile from "@/components/TheGoodsTile";
+import TheSidebarLeft from "@/components/TheSidebarLeft";
+import Pagination from "@/components/Pagination";
+import Reload from "@/components/Reload";
 
 export default function Home() {
   return (
@@ -40,21 +43,25 @@ export default function Home() {
     </div>
     <div className="catalog-container">
       <div className="catalog-container_settings">
-        settings
+        <TheSidebarLeft/>
       </div>
-      <div className="catalog-grid">
-          <div className="catalog-grid_item">
-            <TheGoodsTile/>
-          </div>
-          <div className="catalog-grid_item">
-            <TheGoodsTile/>
-          </div>
-          <div className="catalog-grid_item">
-            <TheGoodsTile/>
-          </div>
-          <div className="catalog-grid_item">
-            <TheGoodsTile/>
-          </div>
+      <div className="catalog-grid_container">
+        <div className="catalog-grid">
+            <div className="catalog-grid_item">
+              <TheGoodsTile/>
+            </div>
+            <div className="catalog-grid_item">
+              <TheGoodsTile/>
+            </div>
+            <div className="catalog-grid_item">
+              <TheGoodsTile/>
+            </div>
+            <div className="catalog-grid_item">
+              <TheGoodsTile/>
+            </div>
+        </div>
+        <Reload />
+        <Pagination />
       </div>
     </div>
     </>

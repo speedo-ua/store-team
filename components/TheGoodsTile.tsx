@@ -1,5 +1,5 @@
 import TheRating from "./TheRating"
-import Cart from "./Buttons/Cart"
+import Cart from "./Icons/Cart"
 
 
 const TheGoodsTile = () => {
@@ -34,6 +34,16 @@ const TheGoodsTile = () => {
     
     return (
         <div className="goods-tile">
+            <div className="tile_top">
+            <div className="tile_top_promo">
+                    <div className="best_sale">Top Sale</div>
+                </div>
+                <div className="tile_top_actions">
+                    <div className="favor"></div>
+                    <div className="compare"></div>
+                </div>
+            </div>
+            
             <img src={`/img/product/${products.id}/${products.img}`} title={products.title} alt={products.title} className="img_tile"/>
             <div className="tile_description" title={products.title}>{products.title}</div>
             <div className="tile-rating_block">

@@ -25,6 +25,7 @@ const IconType = (props:{type:string; style?: string}) => {
         : type === 'cancel' ? setIcon(<CancelIcon className={style}/>)
         : type === 'grid-two' ? setIcon(<GridTwoIcon className={style}/>)
         : type === 'grid-three' ? setIcon(<GridThreeIcon className={style}/>)
+        : type === 'arrow' ? setIcon(<img src="/img/arrow_icon.svg" alt="Arrow" className={style} />)
         : setIcon('')
     }
     

@@ -1,7 +1,7 @@
 import Link from "next/link"
-import Cart from "./Buttons/Cart"
-import Profile from "./Buttons/Profile"
-import FatMenu from "./Buttons/FatMenu"
+import Cart from "./Icons/Cart"
+import ProfileIcon from "./Icons/ProfileIcon"
+import FatMenu from "./Icons/FatMenu"
 
 const TheHeader = () => {
     return (
@@ -25,7 +25,7 @@ const TheHeader = () => {
                         <li className="header-actions_item-languages"></li>
                         <li className="header-actions_item-user">
                             <button className="header-actions_button">
-                                <Profile style="header-actions_cart"/>
+                                <ProfileIcon style="header-actions_cart"/>
                             </button>
                         </li>
                         <li className="header-actions_item-cart"> 
