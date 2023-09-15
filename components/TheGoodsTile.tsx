@@ -1,5 +1,8 @@
 import TheRating from "./TheRating"
 import Cart from "./Icons/Cart"
+import FavorIcon from "./Icons/FavorIcon";
+import Link from "next/link";
+import ScaleIcon from "./Icons/ScaleIcon";
 
 
 const TheGoodsTile = () => {
@@ -34,15 +37,13 @@ const TheGoodsTile = () => {
     
     return (
         <div className="goods-tile">
-            <div className="tile_top">
-            <div className="tile_top_promo">
+                <div className="tile_top_promo">
                     <div className="best_sale">Top Sale</div>
                 </div>
                 <div className="tile_top_actions">
-                    <div className="favor"></div>
-                    <div className="compare"></div>
+                    <button className="tile_actions_btn"><FavorIcon style="favor_svg"/></button>
+                    <button className="tile_actions_btn"><ScaleIcon style="compare_svg"/></button>
                 </div>
-            </div>
             
             <img src={`/img/product/${products.id}/${products.img}`} title={products.title} alt={products.title} className="img_tile"/>
             <div className="tile_description" title={products.title}>{products.title}</div>
@@ -50,12 +51,12 @@ const TheGoodsTile = () => {
                 <div className="tile-rating">
                     <TheRating /> 
                 </div>
-                <div className="tile-rating_text"> {products.review} reviews</div>
+                <div className="tile-rating_text"> <Link href={"/#"}>{products.review} reviews</Link></div>
             </div>
             <div className="tile-price_old">{products.price_old}₴</div>
             <div className="tile-price_block">
                 <div className="tile_price">{products.price_new}<span className="currency">₴</span></div>
-                <Cart style="tile_cart"/>
+                <button className="tile_actions_btn"><Cart style="tile_cart"/></button>
             </div>
             <div className="tile_delivery">
                 Redy for delivery 
