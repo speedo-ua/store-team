@@ -19,18 +19,18 @@ export default function Home() {
     <div className="catalog_block">
       <div className="catalog-settings">
         <div className="catalog-settings_filter">
-          <div className="catalog-settings_filter-text">
+          <div className="catalog-settings_filter_text">
             4000 products selected
-            </div>
-            <button className="catalog-settings_btn_cancel">
-              Cancel
-            </button>
-            <button className="catalog-settings_btn_check">
-              Acer 
-              <div className="cancel_round"> 
-              <IconType type='cancel'/>
-              </div> 
-            </button>
+          </div>
+          <button className="catalog-settings_filter_btn_cancel">
+            Cancel
+          </button>
+          <button className="catalog-settings_filter_btn_check">
+            Acer 
+            <div className="cancel_round"> 
+            <IconType type='cancel'/>
+            </div> 
+          </button>
         </div>
         <div className="catalog-settings_sorting">
           <select defaultValue={"rating"}>
@@ -47,18 +47,18 @@ export default function Home() {
         <div className="catalog-container_settings">
           <TheSidebarLeft/>
         </div>
-        <div className="catalog-grid_container">
-          <div className="catalog-grid">
-              <div className="catalog-grid_item">
+        <div className="catalog-grid">
+          <div className="catalog-grid_container">
+              <div className="catalog-grid_container_item">
                 <TheGoodsTile/>
               </div>
-              <div className="catalog-grid_item">
+              <div className="catalog-grid_container_item">
                 <TheGoodsTile/>
               </div>
-              <div className="catalog-grid_item">
+              <div className="catalog-grid_container_item">
                 <TheGoodsTile/>
               </div>
-              <div className="catalog-grid_item">
+              <div className="catalog-grid_container_item">
                 <TheGoodsTile/>
               </div>
           </div>

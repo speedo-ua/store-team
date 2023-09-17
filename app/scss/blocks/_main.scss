@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 1280px;
+}
+
+.main-layout{
+    display: flex;
+    flex-direction: column;
+    width: $desktop;
+
+    .page-breadcumbs{
+        display: flex;
+        font-size: 14px;
+        margin: 16px 0px 8px 0px;
+        color: $black_global;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        li{
+            &:not(:first-child){
+                padding-left: 5px;
+                content: '/';
+            }
+
+            &:hover{
+                color: $red_global;
+              }
+        } 
+        
+        &_homesvg{
+            font-size: 18px;
+          }
+    
+    }
+
+    .page-title{
+        color: $black_global;
+
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+          }
+      }
+    
+}
+
+

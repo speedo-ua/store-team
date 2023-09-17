@@ -1,0 +1,122 @@
+.top-information{
+    height: 32px;
+    background-color: $green_global;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white_global;
+    font-weight: 700;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $darkgrey_global;
+    color: $white_global;
+    height: 72px;
+    font-size: 16px;
+    align-items: center;
+    padding: 0px 10px;
+    top: 0;
+    position: sticky;
+    z-index:5;
+}
+
+.header-layout{
+    display: flex;
+    width: $desktop;
+
+    .header-logo{
+        margin: 0px 24px 0px 0px;
+        width: 400px;
+    }
+
+    .header_fat-menu{
+        margin: 0px 24px 0px 0px;
+        padding: 1px 16px;
+        height: 40px;
+        background-color: #fff3;
+        color: $white_global;
+        font-size: 16px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            &:hover{
+                background-color: #888888;
+            }
+
+        .svg_fat-menu{
+            margin: 0px 8px 0px 0px;
+            font-size: 28px;
+            }
+    }
+    
+    .header_search_form{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .header_search_input{
+            height: 100%;
+            width: 100%;
+            padding:0px 0px 0px 40px;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%234E4C4C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='M10 2a8 8 0 104.906 14.32l5.387 5.387a1 1 0 001.414-1.414l-5.387-5.387A8 8 0 0010 2zm-6 8a6 6 0 1112 0 6 6 0 01-12 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 12px;
+            color: $black_global;
+            border-radius: 3px 0 0 3px;
+            border: none;
+            outline: none;  
+        }
+        
+        .header_search_submit{
+            background-color: $green_global;
+            color: $white_global;
+            font-size: 16px;
+            height: 100%;
+            padding: 0px 16px 0px 16px;
+            border-radius: 0 3px 3px 0;
+            margin: 0px 0px 0px 0px;
+            border: none;
+            outline: none;
+            
+            &:hover {
+                background-color: $green_global_80;
+              }
+        }    
+    }
+
+    .header-actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .header-actions_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            margin: 0px 0px 0px 24px;
+            background-color: $darkgrey_global;
+
+            &:hover{
+                background-color: #888888;
+            }
+
+            .header-actions_cart {
+                color:$white_global;
+                font-size: 32px;
+              }
+        }
+    }
+
+}
+
+
+

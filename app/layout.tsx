@@ -1,5 +1,6 @@
 import TheHeader  from '@/components/TheHeader'
-import './globals.css'
+// import './globals.css'
+import './css/main.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import TheFooter from '@/components/TheFooter'

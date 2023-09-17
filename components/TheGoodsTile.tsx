@@ -41,8 +41,8 @@ const TheGoodsTile = () => {
                     <div className="best_sale">Top Sale</div>
                 </div>
                 <div className="tile_top_actions">
-                    <button className="tile_actions_btn"><FavorIcon style="favor_svg"/></button>
-                    <button className="tile_actions_btn"><ScaleIcon style="compare_svg"/></button>
+                    <button className="tile_top_actions_btn"><FavorIcon style="favor_svg"/></button>
+                    <button className="tile_top_actions_btn"><ScaleIcon style="compare_svg"/></button>
                 </div>
             
             <img src={`/img/product/${products.id}/${products.img}`} title={products.title} alt={products.title} className="img_tile"/>

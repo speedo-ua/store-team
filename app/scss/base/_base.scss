@@ -1,0 +1,21 @@
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+
+.grey{
+    color: $black_global_40;
+}
+
+
+button {
+    cursor: pointer;
+    transition: {
+        duration: .2s;
+        property: color, background-color, border-color;
+        timing-function: ease-in-out;
+    };
+    border: none;
+    outline: none;
+  }

@@ -177,7 +177,6 @@ button, .checkbox-filter>li, .custom-checkbox, .reload-block{
   height: 40px;
   border-radius: 4px;
   margin: 0px 0px 0px 24px;
-
 }
 
 .header-actions_cart {
@@ -250,33 +249,33 @@ button, .checkbox-filter>li, .custom-checkbox, .reload-block{
 
 }
 
-.catalog-settings_btn_cancel, .catalog-settings_btn_check{
+.catalog-settings_filter_btn_cancel, .catalog-settings_filter_btn_check{
   color:var(--black_global);
   margin-left: 12px;
   border-radius: 20px;
   border: .1px solid;
 }
 
-.catalog-settings_btn_cancel{
+.catalog-settings_filter_btn_cancel{
   margin-left: 12px;
   padding: 5px 20px;
   border-radius: 20px;
   border-color: var(--red_global_20);
 }
 
-.catalog-settings_btn_cancel:hover{
+.catalog-settings_filter_btn_cancel:hover{
   color:var(--white_global);
   background-color: var(--red_global_20);
 }
 
-.catalog-settings_btn_check{
+.catalog-settings_filter_btn_check{
   display: flex;
   align-items: center;
   padding: 5px 5px 5px 20px;
   border-color: var(--black_global_40);
 }
 
-.catalog-settings_btn_check:hover{
+.catalog-settings_filter_btn_check:hover{
   background-color: var(--black_global_20);
 }
 
@@ -363,17 +362,17 @@ button, .checkbox-filter>li, .custom-checkbox, .reload-block{
   border-bottom: 0.1px solid var(--black_global_20);
 }
 
-.catalog-grid_container{
+.catalog-grid{
   display: flex;
   flex-direction: column;
 }
 
-.catalog-grid{
+.catalog-grid_container{
   display: flex;
   max-width: 1280px; 
 }
 
-.catalog-grid_item{
+.catalog-grid__container_item{
   min-width: 320px;
   max-height: 550px;
   padding: 8px;
@@ -446,7 +445,7 @@ font-weight: 600;
 
 }
 
-.tile_actions_btn{
+.tile_top_actions_btn{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,7 +456,7 @@ font-weight: 600;
   border-radius: 6px;
 }
 
-.tile_actions_btn:hover{
+.tile_top_actions_btn:hover{
   background-color: var(--blue_global_10);
 }
 
