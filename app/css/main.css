@@ -45,6 +45,8 @@ table {
 
 input {
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 
@@ -100,8 +102,9 @@ header {
 }
 
 .header-layout {
-  display: flex;
   width: 1600px;
+  padding: 0 32px;
+  display: flex;
 }
 .header-layout .header-logo {
   margin: 0px 24px 0px 0px;
@@ -188,9 +191,10 @@ main {
 }
 
 .main-layout {
+  width: 1600px;
+  padding: 0 32px;
   display: flex;
   flex-direction: column;
-  width: 1600px;
 }
 .main-layout .page-breadcumbs {
   display: flex;
@@ -752,6 +756,8 @@ footer {
 }
 .footer-download_content {
   width: 1600px;
+  padding: 0 32px;
+  display: flex;
 }
 
 .footer-map {
@@ -762,9 +768,10 @@ footer {
   padding: 25px 0px;
 }
 .footer-map_content {
+  width: 1600px;
+  padding: 0 32px;
   display: flex;
   justify-content: space-between;
-  width: 1600px;
 }
 .footer-map_content_item {
   display: flex;
@@ -777,10 +784,11 @@ footer {
   height: 60px;
 }
 .footer-copyright_content {
+  width: 1600px;
+  padding: 0 32px;
   display: flex;
   justify-content: right;
   align-items: center;
   font-size: 14px;
   border-top: 1px #c1c1c1 solid;
-  width: 1600px;
 }/*# sourceMappingURL=main.css.map */

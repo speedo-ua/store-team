@@ -1,5 +1,5 @@
 "use client"
-import UserSvg from '@/app/images/profile-user.svg'
+import UserSvg from '@/images/profile-user.svg'
 
 const ProfileIcon = (props:{style: string}) => {
     

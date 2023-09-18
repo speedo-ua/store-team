@@ -1,5 +1,5 @@
 "use client"
-import ScaleSvg from '@/app/images/scale-icon.svg'
+import ScaleSvg from '@/images/scale-icon.svg'
 
 const ScaleIcon = (props:{style: string}) => {
     

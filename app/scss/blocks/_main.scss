@@ -5,9 +5,8 @@ main {
 }
 
 .main-layout{
-    display: flex;
+    @include desktop;
     flex-direction: column;
-    width: $desktop;
 
     .page-breadcumbs{
         display: flex;

@@ -1,5 +1,5 @@
 "use client"
-import FatMenuIcon from '@/app/images/fat_menu_icon.svg'
+import FatMenuIcon from '@/images/fat_menu_icon.svg'
 
 const FatMenu = (props:{style: string}) => {
     

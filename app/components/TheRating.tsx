@@ -1,5 +1,5 @@
 'use client'
-import  Rating from '../app/images/raiting_icon.svg'
+import  Rating from '../images/raiting_icon.svg'
 
 
 const TheRating = () => {

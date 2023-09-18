@@ -1,5 +1,5 @@
 "use client"
-import FavorSvg from '@/app/images/favorite-outline.svg'
+import FavorSvg from '@/images/favorite-outline.svg'
 
 const FavorIcon = (props:{style: string}) => {
     

@@ -1,83 +1,32 @@
-import Link from "next/link";
-
-import IconType from "@/components/Buttons/IconType";
-import TheGoodsTile from "@/components/TheGoodsTile";
-import TheSidebarLeft from "@/components/TheSidebarLeft";
-import Pagination from "@/components/Pagination";
-import Reload from "@/components/Reload";
+import TheSidebarLeft from "@/components/Blocks/TheSidebarLeft";
 import DescriptionCatalog from "@/components/DescriptionCatalog";
+import TheGoodsGrid from "@/components/TheGoodsGrid";
+import FilterResults from "@/components/FilterResults";
+import NavBreadcumbs from "@/components/NavBreadcumbs";
+import SelectSortingGoods from "@/components/SelectSortingGoods";
+import GridStyle from "@/components/Buttons/GridStyle";
+import GoodsHistory from "@/components/GoodsHistory";
 
 export default function Home() {
   return (
     <>
-    <nav className="page-breadcumbs">
-      <ul>
-        <li><Link href={'#'}><IconType type='home' style='page-breadcumbs_homesvg'/></Link> </li>
-        <li><Link href={'#'}>Desktops and Notebooks</Link> </li>
-        <li><Link href={'#'}>Notebooks</Link> </li>
-      </ul>
-    </nav>
+    <NavBreadcumbs/>
     <div className="page-title"><h1>Notebooks Acer</h1></div>
     <div className="catalog_block">
       <div className="catalog-settings">
-        <div className="catalog-settings_filter">
-          <div className="catalog-settings_filter_text">
-            4000 products selected
+          <FilterResults/>
+          <div className="catalog-settings_sorting">
+              <SelectSortingGoods/>
+              <GridStyle/>
           </div>
-          <button className="catalog-settings_filter_btn_cancel">
-            Cancel
-          </button>
-          <button className="catalog-settings_filter_btn_check">
-            Acer 
-            <div className="cancel_round"> 
-            <IconType type='cancel'/>
-            </div> 
-          </button>
-        </div>
-        <div className="catalog-settings_sorting">
-          <select defaultValue={"rating"}>
-            <option value="cheap">Cheap to expensive</option>
-            <option value="expensive">Expensive to cheap</option>
-            <option value="novelty">Novelty</option>
-            <option value="rating">By rating</option>
-          </select>
-          <button className="grid-two"><IconType type='grid-two'/></button>
-          <button className="grid-three"><IconType type='grid-three'/></button>
-        </div>
       </div>
       <div className="catalog-container">
-        <div className="catalog-container_settings">
           <TheSidebarLeft/>
-        </div>
-        <div className="catalog-grid">
-          <div className="catalog-grid_container">
-              <div className="catalog-grid_container_item">
-                <TheGoodsTile/>
-              </div>
-              <div className="catalog-grid_container_item">
-                <TheGoodsTile/>
-              </div>
-              <div className="catalog-grid_container_item">
-                <TheGoodsTile/>
-              </div>
-              <div className="catalog-grid_container_item">
-                <TheGoodsTile/>
-              </div>
-          </div>
-          <Reload />
-          <Pagination />
-        </div>
+          <TheGoodsGrid/>
       </div>
     </div>
-    <div className="history-views_container">
-          <span>Your history views</span>
-          <div className="history-views_container_grid">
-            <div className="history-views_tile">
-            <TheGoodsTile/>
-            </div>
-          </div>
+    <GoodsHistory/>
     <DescriptionCatalog/>
-    </div>
     </>
   )
 }

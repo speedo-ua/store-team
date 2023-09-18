@@ -1,5 +1,5 @@
 "use client"
-import Basket from '@/app/images/cart_icon_outline.svg'
+import Basket from '@/images/cart_icon_outline.svg'
 
 const Cart = (props:{style: string}) => {
     

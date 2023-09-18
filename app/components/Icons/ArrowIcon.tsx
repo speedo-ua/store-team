@@ -1,5 +1,5 @@
 "use client"
-import ArrowSvg from '@/app/images/arrow_icon.svg'
+import ArrowSvg from '@/images/arrow_icon.svg'
 
 const ArrowIcon = (props:{style: string}) => {
     

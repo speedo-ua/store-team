@@ -1,7 +1,7 @@
 import Link from "next/link"
-import Cart from "./Icons/Cart"
-import ProfileIcon from "./Icons/ProfileIcon"
-import FatMenu from "./Icons/FatMenu"
+import Cart from "../Icons/Cart"
+import ProfileIcon from "../Icons/ProfileIcon"
+import FatMenu from "../Icons/FatMenu"
 
 const TheHeader = () => {
     return (

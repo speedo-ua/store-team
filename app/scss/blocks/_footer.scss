@@ -15,7 +15,7 @@ footer {
     font-weight: 600;
 
     &_content{
-      width: $desktop;
+      @include desktop;
     }
 }
 
@@ -27,9 +27,8 @@ footer {
     padding: 25px 0px;
 
     &_content{
-      display: flex;
+      @include desktop;
       justify-content: space-between;
-      width: $desktop;
 
       &_item{
         display: flex;
@@ -44,12 +43,11 @@ footer {
     height: 60px;
 
     &_content{
-      display: flex;
+      @include desktop;
       justify-content: right;
       align-items: center;
       font-size: 14px;
       border-top: $border_black;
-      width: $desktop;
     }
 }
 
