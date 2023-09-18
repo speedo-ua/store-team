@@ -1,5 +1,5 @@
-@import './base/reset';
 @import "./base/vars";
+@import './base/reset';
 @import "./base/base";
 
 
@@ -8,6 +8,8 @@
 @import "./blocks/main";
 @import "./blocks/product_grid";
 @import "./blocks/product_tile";
+@import "./blocks/sidebar";
+@import "./blocks/pagination";
 @import "./blocks/footer";
 
 

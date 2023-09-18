@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#css
+/app/globals.css
+
 # testing
 /coverage
 

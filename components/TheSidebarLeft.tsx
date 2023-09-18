@@ -6,9 +6,9 @@ const TheSidebarLeft = () => {
     return (
         <div className="sidebar-container">
             <div className="sidebar-block">
-                <button className="sidebar-block-toggle">
-                    <div>Saler <span className="grey text-xs ml-1">2</span></div>
-                    <div className="sidebar-block-arrow"></div>
+                <button className="sidebar-block_toggle">
+                    <div className="sidebar-block_toggle-text">Saler <span>2</span></div>
+                    <div className="sidebar-block_toggle-arrow"></div>
                 </button>
                 <ul className="checkbox-filter">
                     <li><input className="custom-checkbox" type="checkbox" name="Saler" id="Rozetka" value="Rozetka" /><label htmlFor="Rozetka">Rozetka</label></li>
@@ -16,9 +16,9 @@ const TheSidebarLeft = () => {
                 </ul>
             </div>
             <div className="sidebar-block">
-                <button className="sidebar-block-toggle">
-                    <div>Brand <span className="grey text-xs ml-1">10</span></div>
-                    <div className="sidebar-block-arrow"></div>
+                <button className="sidebar-block_toggle">
+                    <div className="sidebar-block_toggle-text">Brand <span>10</span></div>
+                    <div className="sidebar-block_toggle-arrow"></div>
                 </button>
                 <ul className="checkbox-filter">
                     <li><input className="custom-checkbox" type="checkbox" name="brand" id="acer" value="acer" defaultChecked/><label htmlFor="acer">Acer <span className="grey text-xs ml-1">1870</span></label></li>
@@ -34,7 +34,7 @@ const TheSidebarLeft = () => {
                 </ul>
             </div>
             <div className="sidebar-block">
-                <button className="sidebar-block-toggle">
+                <button className="sidebar-block_toggle">
                     <div>Price</div>
                     <div className="sidebar-block-arrow"></div>
                 </button>

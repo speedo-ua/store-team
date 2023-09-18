@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import IconType from "@/components/Buttons/IconType";
 import TheGoodsTile from "@/components/TheGoodsTile";
 import TheSidebarLeft from "@/components/TheSidebarLeft";
@@ -10,9 +12,9 @@ export default function Home() {
     <>
     <nav className="page-breadcumbs">
       <ul>
-        <li><IconType type='home' style='page-breadcumbs_homesvg'/> </li>
-        <li>/ Desktops and Notebooks</li>
-        <li>/ Notebooks</li>
+        <li><Link href={'#'}><IconType type='home' style='page-breadcumbs_homesvg'/></Link> </li>
+        <li><Link href={'#'}>Desktops and Notebooks</Link> </li>
+        <li><Link href={'#'}>Notebooks</Link> </li>
       </ul>
     </nav>
     <div className="page-title"><h1>Notebooks Acer</h1></div>

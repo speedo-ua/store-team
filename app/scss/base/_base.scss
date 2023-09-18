@@ -3,9 +3,18 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
+body {
+    background-color: $white_global;
+    color: $black_global;
+}
 
-.grey{
-    color: $black_global_40;
+a{
+    color: $blue_global;
+  
+      &:hover{
+        color: $red_global;
+        text-decoration: underline;
+      }
 }
 
 
@@ -18,4 +27,5 @@ button {
     };
     border: none;
     outline: none;
-  }
+    background-color: $white_global;
+}

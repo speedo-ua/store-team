@@ -12,23 +12,30 @@ main {
     .page-breadcumbs{
         display: flex;
         font-size: 14px;
-        margin: 16px 0px 8px 0px;
-        color: $black_global;
+        margin: 16px 0px;
 
         ul{
             display: flex;
+            align-items: center;
             list-style-type: none;
+        }
+
+        a{
+            color: $black_global;
+
+            &:hover{
+                color: $red_global;
+            }
         }
 
         li{
             &:not(:first-child){
                 padding-left: 5px;
-                content: '/';
-            }
+                &::before{
+                    content: '/ ';
+                }
 
-            &:hover{
-                color: $red_global;
-              }
+            }
         } 
         
         &_homesvg{
@@ -38,14 +45,22 @@ main {
     }
 
     .page-title{
-        color: $black_global;
+
 
         h1{
             font-size: 30px;
             font-weight: 700;
           }
-      }
+    }
     
 }
+
+.description-catalog{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    text-align: justify;
+    color: $black_global_40;
+  }
 
 

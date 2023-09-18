@@ -2,6 +2,55 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: $white_global;
     background-color: $black_global_10;
-  }
+}
+
+.footer-download{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: $green_global;
+    color: $white_global;
+    font-size: 20px;
+    font-weight: 600;
+
+    &_content{
+      width: $desktop;
+    }
+}
+
+.footer-map{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    font-size: 12px;
+    padding: 25px 0px;
+
+    &_content{
+      display: flex;
+      justify-content: space-between;
+      width: $desktop;
+
+      &_item{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+    &_content{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      font-size: 14px;
+      border-top: $border_black;
+      width: $desktop;
+    }
+}
+
+

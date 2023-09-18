@@ -1,0 +1,101 @@
+.reload-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $blue_global;
+    padding: 12px 12px;
+    border-bottom: $border_grey;
+
+    &:hover{
+        color: $red_global;
+    }
+
+    .reload-icon {
+        font-size: 80px;
+        margin-right: 10px;
+    }
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .pagination-navigation{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 24px;
+
+
+        .pagination_arrow_block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 68px;
+            height: 45px;
+            color: $blue_global;
+            border: $tin_line $black_global_10 solid;
+            background-color: $tin_line $black_global_10 solid;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover{
+                color: $red_global;
+            }
+
+            %arrow_style {
+                font-size: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .pagination_arrow_bck{
+                @extend %arrow_style;
+                font-size: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(90deg);
+            }
+
+            .pagination_arrow_fwd{
+                @extend %arrow_style;
+                font-size: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(-90deg);
+            }
+        }
+
+        &_list{
+            display: flex;
+            justify-content: center;
+            
+            .navigation_item {
+                list-style: none;
+                margin-left: 5px;
+            
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 45px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border: $border_grey;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover, &.active{
+                        border-color: $blue_global;
+                        text-decoration: none;
+                    }
+                }
+            }    
+        }
+    
+    }
+  
+
+}

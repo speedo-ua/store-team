@@ -1,0 +1,181 @@
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    .sidebar-block{
+        padding: 0px 8px;
+        border-bottom: $border_grey;
+
+        &_toggle{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 8px 8px 8px 8px;
+            color: $blue_global;
+            
+            
+            &-text{
+            
+                span{
+                    color: $black_global_40;
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+
+            &-arrow{
+                width: 20px;
+                height: 20px;
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%233e77aa' viewBox='0 0 13 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.5 7a.956.956 0 0 1-.657-.256l-5.57-5.25a.839.839 0 0 1 0-1.237.968.968 0 0 1 1.312 0L6.5 4.888 11.415.257a.968.968 0 0 1 1.313 0 .839.839 0 0 1 0 1.237l-5.572 5.25A.956.956 0 0 1 6.5 7Z'/%3E%3C/svg%3E"); 
+                background-repeat: no-repeat;
+                background-size: 16px;
+                transform: rotate(180deg);
+                background-position: center;
+
+                &:hover{
+                    transform: rotate(0deg);
+                    animation-name: rotate;
+                    animation-duration: .5s;
+                }
+                
+                @keyframes rotate {
+                    0% {
+                      transform: rotate(180deg);
+                    }
+                    100% {
+                      transform: rotate(0deg);
+                    }
+                }
+            }       
+        }
+    
+        .checkbox-filter{
+
+            
+            li{
+            padding: 8px 8px 8px 8px;
+                
+                
+                &:hover{
+                    background-color: $blue_global_10;
+                }
+
+                .custom-checkbox{
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+
+                    &+label {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none;
+                        cursor: pointer;
+                        width: 100%;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 1em;
+                            height: 1em;
+                            flex-shrink: 0;
+                            flex-grow: 0;
+                            border: 1px solid #adb5bd;
+                            border-radius: 0.25em;
+                            margin-right: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 50% 50%;
+                        }
+                    }
+                
+                    &:checked+label{
+            
+                        &::before{
+                        border-color: $green_global;
+                        background-color: $green_global_80;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+                        }
+                    }
+
+                    &:not(:disabled):not(:checked)+label{
+
+                        &:hover{
+                            &::before {
+                                border-color: $black_global;
+                              }
+                        }
+                    }  
+                }
+            
+                span{
+                    color: $black_global_40;
+                    font-size: 12px;
+                    margin-left: 5px;
+    
+                    &::before{
+                        content: '(';
+                    }
+                    &::after{
+                        content: ')';
+                    }
+                }
+            }   
+        }
+
+
+        .range-filter{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price_range_blocks{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .input_price_range{
+                width: 80px;
+                height: 40px;
+                font-size: 14px;
+                text-align: center;
+                border: $border_black;
+                border-radius: 10px;
+            }
+
+            button{
+                width: 60px;
+                height: 40px;
+                margin-left: 5px;
+                color: $blue_global;
+                background-color: $black_global_10;
+                border: $border_black;
+                border-radius: 10px;
+            }
+        }
+
+        .range{
+            width: 100%;
+            overflow: hidden;
+            background-color: $green_global;
+
+            &::-webkit-slider-runnable-track {
+                height: 10px;
+                -webkit-appearance: none;
+                color: $green_global_80;
+                margin-top: -1px;
+              }
+
+            &::-webkit-slider-thumb {
+                width: 20px;
+                -webkit-appearance: none;
+                height: 10px;
+                cursor: ew-resize;
+                background:$black_global_20;
+                box-shadow: 150px 0 0 150px $white_global;
+              }
+          
+        }
+    }
+}
