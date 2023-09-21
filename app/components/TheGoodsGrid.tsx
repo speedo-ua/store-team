@@ -3,7 +3,7 @@ import Reload from "./Reload";
 import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
 import { useEffect, useState } from "react";
-import Data from '@/api/data/goods.json'
+import Data from '@/api/data/data.json'
 
 
 const TheGoodsGrid = () => {
