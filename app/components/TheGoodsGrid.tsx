@@ -3,11 +3,6 @@ import Reload from "./Reload";
 import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-
-=======
-import Data from '@/api/data/data.json'
->>>>>>> 032df230c8a76fb68b5ba60a403f3d7bb05a97de
 
 
 const TheGoodsGrid = () => {
