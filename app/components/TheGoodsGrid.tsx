@@ -3,22 +3,21 @@ import Reload from "./Reload";
 import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
 import { useEffect, useState } from "react";
-import Data from '@/api/data/goods.json'
+
 
 
 const TheGoodsGrid = () => {
-
+ 
   const [result, setResult] = useState<any>()
 
   useEffect(()=>{
-    dataFetching(Data)
+    dataFetching('/api')
   }, [])
 
 
-  const dataFetching = async (url: any) => {
+  const dataFetching = async (url: string) => {
     const res = await fetch(url)
-    const result = res.json()
-    setResult(result)
+    res.json().then(data=>setResult(data))
   }
 
   console.log (result)
