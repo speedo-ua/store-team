@@ -1,25 +1,35 @@
-'use client'
 import Reload from "./Reload";
 import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
-import { useEffect, useState } from "react";
 
 
-const TheGoodsGrid = () => {
- 
-  const [result, setResult] = useState<any>()
-
-  useEffect(()=>{
-    dataFetching('/api')
-  }, [])
-
-
-  const dataFetching = async (url: string) => {
-    const res = await fetch(url)
-    res.json().then(data=>setResult(data))
+export async function getServerSideProps () {
+  const query = await fetch('http://localhost:3000/api');
+  const result = await query.json();
+  return {
+    props: {
+      data: result,
+    },
   }
+}
 
-  console.log (result)
+
+const TheGoodsGrid =  ({data}: any) => {
+ 
+  // const [result, setResult] = useState<any>()
+
+  // useEffect(()=>{
+  //   dataFetching('/api')
+  // }, [])
+
+
+  // const dataFetching = async (url: string) => {
+  //   const res = await fetch(url)
+  //   res.json().then(data=>setResult(data))
+  // }
+
+  console.log(data)
+
     return(
         <div className="catalog-grid">
         <div className="catalog-grid_container">
@@ -42,5 +52,6 @@ const TheGoodsGrid = () => {
     )
 
 }
+
 
 export default TheGoodsGrid;
