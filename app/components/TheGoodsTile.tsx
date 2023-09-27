@@ -5,8 +5,10 @@ import Link from "next/link";
 import ScaleIcon from "./Icons/ScaleIcon";
 
 
-const TheGoodsTile = () => {
+const TheGoodsTile = (product: any) => {
     
+   
+
     interface IProduct {
         id: number;
         category:string;
@@ -18,21 +20,26 @@ const TheGoodsTile = () => {
         img: string;
         rating: number;
         review: number;
-      }
+     }
+
+       const {products} = product;
+    
+    // console.log(products.id)
+
+    // const products: IProduct = {
+    //     id: 1,
+    //     category: 'notebook',
+    //     brand: 'Acer',
+    //     model: 'Acer Aspire 5',
+    //     title: 'Notebook Acer Aspire 5 A515-56G-51Q5 (NX.AT2EU.00M) Pure Silver/Intel Core i5-1135G7/RAM 8 ГБ/SSD 512 ГБ/nVidia GeForce MX450',
+    //     price_old: 30999,
+    //     price_new: 21999,
+    //     img: '285466617.webp',
+    //     rating:4,
+    //     review:10,
+    // }
 
 
-    const products: IProduct = {
-        id: 1,
-        category: 'notebook',
-        brand: 'Acer',
-        model: 'Acer Aspire 5',
-        title: 'Notebook Acer Aspire 5 A515-56G-51Q5 (NX.AT2EU.00M) Pure Silver/Intel Core i5-1135G7/RAM 8 ГБ/SSD 512 ГБ/nVidia GeForce MX450',
-        price_old: 30999,
-        price_new: 21999,
-        img: '285466617.webp',
-        rating:4,
-        review:10,
-    }
 
     
     return (

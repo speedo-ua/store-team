@@ -1,40 +1,30 @@
-'use client'
 import Reload from "./Reload";
 import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
-import { useEffect, useState } from "react";
+
+const fetchProps = async () => {
+  const data = await fetch('http://localhost:3000/api');
+  return data.json();
+}
 
 
-const TheGoodsGrid = () => {
+const TheGoodsGrid = async () => {
+
+  const data = await fetchProps();
  
-  const [result, setResult] = useState<any>()
 
-  useEffect(()=>{
-    dataFetching('/api')
-  }, [])
+  // console.log (data)
 
-
-  const dataFetching = async (url: string) => {
-    const res = await fetch(url)
-    res.json().then(data=>setResult(data))
-  }
-
-  console.log (result)
     return(
         <div className="catalog-grid">
         <div className="catalog-grid_container">
-            <div className="catalog-grid_container_item">
-              <TheGoodsTile/>
-            </div>
-            <div className="catalog-grid_container_item">
-              <TheGoodsTile/>
-            </div>
-            <div className="catalog-grid_container_item">
-              <TheGoodsTile/>
-            </div>
-            <div className="catalog-grid_container_item">
-              <TheGoodsTile/>
-            </div>
+           
+              {data.map((product: object, index:number) => 
+                      <div className="catalog-grid_container_item">
+                          <TheGoodsTile key={index} products={product} />
+                      </div>
+              )}
+
         </div>
         <Reload />
         <Pagination />
@@ -42,5 +32,7 @@ const TheGoodsGrid = () => {
     )
 
 }
+
+
 
 export default TheGoodsGrid;
