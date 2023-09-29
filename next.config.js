@@ -19,9 +19,6 @@ module.exports = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  experimental: {
-    serverActions: true,
-  },
 
   // module: {
   //   rules: [
