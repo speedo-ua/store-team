@@ -41,8 +41,8 @@ const TheSidebarLeft = () => {
                         </button>
                         <div className="range-filter">
                         <div className="price_range_blocks">
-                        <input type="text" name="priceFrom" id="priceFrom" className="input_price_range" defaultValue={0} /> -
-                        <input type="text" name="priceFrom" id="priceFrom" className="input_price_range" defaultValue={30000} />
+                        <input type="text" name="priceFrom" id="priceFromStart" className="input_price_range" defaultValue={0} /> -
+                        <input type="text" name="priceFrom" id="priceFromEnd" className="input_price_range" defaultValue={30000} />
                         <button type="submit">OK</button>
                         </div>
                         <input className="range" id="range" type="range" defaultValue={50}/>

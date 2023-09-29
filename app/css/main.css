@@ -252,7 +252,7 @@ main {
 .catalog-settings_filter .catalog-settings_filter_btn_check, .catalog-settings_filter .catalog-settings_filter_btn_cancel {
   display: flex;
   align-items: center;
-  height: 32px;
+  height: 35px;
   font-size: 14px;
   color: #000;
   background-color: #fff;
@@ -345,6 +345,7 @@ main {
 }
 .catalog-container_settings {
   width: 100%;
+  min-width: 240px;
   /* border-left: $tin_line solid $black_global_20; */
   border-right: 1px solid #dad8d8;
   border-bottom: 1px solid #dad8d8;
@@ -377,14 +378,22 @@ main {
 .goods-tile .tile_top_promo {
   position: absolute;
 }
-.goods-tile .tile_top_promo .best_sale {
+.goods-tile .tile_top_promo .promo {
   text-transform: uppercase;
-  padding: 2px 10px;
+  padding: 4px 10px;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  background-color: #f73f3f;
   border-radius: 14px;
+}
+.goods-tile .tile_top_promo .top_sale {
+  background-color: #ffbb00;
+}
+.goods-tile .tile_top_promo .promotion {
+  background-color: #f73f3f;
+}
+.goods-tile .tile_top_promo .discount {
+  background-color: #5002cd;
 }
 .goods-tile .tile_top_actions {
   display: flex;
@@ -397,11 +406,12 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
-  background-color: #fff;
+  padding: 5px;
+  background-color: hsla(0, 0%, 100%, 0.204);
   border-radius: 6px;
 }
 .goods-tile .tile_top_actions_btn:hover {
-  background-color: rgba(52, 131, 201, 0.0470588235);
+  background-color: hsla(208, 59%, 50%, 0.047);
 }
 .goods-tile .tile_top_actions_btn .favor_svg {
   font-size: 24px;
@@ -411,9 +421,14 @@ main {
   font-size: 24px;
   color: #c1c1c1;
 }
-.goods-tile .img_tile {
+.goods-tile .img_container {
+  display: flex;
   padding-top: 30%;
   padding-bottom: 30%;
+  height: 370px;
+}
+.goods-tile .img_container .img_tile {
+  width: 100%;
 }
 .goods-tile .tile_description {
   font-size: 14px;
@@ -475,7 +490,7 @@ main {
   font-size: 28px;
 }
 .goods-tile .tile_actions_btn:hover {
-  background-color: rgba(52, 131, 201, 0.0470588235);
+  background-color: hsla(208, 59%, 50%, 0.047);
 }
 .goods-tile .tile_delivery {
   font-size: 12px;
@@ -558,7 +573,7 @@ main {
   padding: 8px 8px 8px 8px;
 }
 .sidebar-container .sidebar-block .checkbox-filter li:hover {
-  background-color: rgba(52, 131, 201, 0.0470588235);
+  background-color: hsla(208, 59%, 50%, 0.047);
 }
 .sidebar-container .sidebar-block .checkbox-filter li .custom-checkbox {
   position: absolute;

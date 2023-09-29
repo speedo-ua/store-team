@@ -9,7 +9,8 @@
         "price_new": 21999,
         "img": "285466617.webp",
         "rating":4,
-        "review":10
+        "review":10,
+        "promo": "top_sale"
     },
     {
         "id": 2,
@@ -17,11 +18,12 @@
         "brand": "Acer",
         "model": "Acer Aspire 7",
         "title": "Notebook Acer Aspire 7 A515-56G-51Q5 (NX.AT2EU.00M) Pure Silver/Intel Core i5-1135G7/RAM 8 ГБ/SSD 512 ГБ/nVidia GeForce MX450",
-        "price_old": 49999,
-        "price_new": 31999,
-        "img": "285466617.webp",
+        "price_old": 78635,
+        "price_new": 46753,
+        "img": "285466619.webp",
         "rating":5,
-        "review":18
+        "review":18,
+        "promo": "promotion"
     },
     {
         "id": 3,
@@ -29,10 +31,24 @@
         "brand": "Acer",
         "model": "Acer Aspire 9",
         "title": "Notebook Acer Aspire 9 A515-56G-51Q5 (NX.AT2EU.00M) Pure Silver/Intel Core i5-1135G7/RAM 8 ГБ/SSD 512 ГБ/nVidia GeForce MX450",
-        "price_old": 49999,
-        "price_new": 31999,
-        "img": "285466617.webp",
+        "price_old": 65000,
+        "price_new": 21500,
+        "img": "285466618.webp",
         "rating":3,
-        "review":35
+        "review":35,
+        "promo": "discount"
+    },
+    {
+        "id": 4,
+        "category": "notebook",
+        "brand": "Acer",
+        "model": "Acer Aspire 5",
+        "title": "Notebook Acer Aspire 5 A515-56G-51Q5 (NX.AT2EU.00M) Pure Silver/Intel Core i5-1135G7/RAM 8 ГБ/SSD 512 ГБ/nVidia GeForce MX450",
+        "price_old": 71000,
+        "price_new": 32875,
+        "img": "285466624.webp",
+        "rating":3,
+        "review":25,
+        "promo": "promotion"
     }
 ]

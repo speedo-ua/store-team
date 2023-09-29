@@ -10,15 +10,27 @@
     .tile_top_promo{
         position: absolute;
 
-        .best_sale{
+        .promo {
             text-transform: uppercase;
-            padding: 2px 10px;
+            padding: 4px 10px;
             font-size: 14px;
             font-weight: 600;
             color: $white_global;
-            background-color: $red_global;
             border-radius: 14px;
-          }
+        }
+
+        .top_sale {
+        background-color: $orange_global;
+        }
+
+        .promotion {
+        background-color: $red_global;
+        }
+
+        .discount {
+        background-color: $purple_global;
+        }
+
     }
 
     .tile_top_actions{
@@ -32,11 +44,12 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 5px;
-            background-color: $white_global;
+            padding: 5px;
+            background-color: $white_global_hsla_10;
             border-radius: 6px;
 
             &:hover{
-                background-color: $blue_global_10;
+                background-color: $blue_global_hsla_10;
             }
             
             .favor_svg{
@@ -50,11 +63,21 @@
             }
         }
     }
-
-    .img_tile{
+    
+    .img_container{
+        display: flex;
         padding-top: 30%;
         padding-bottom: 30%;
+        height: 370px;
+
+
+        .img_tile{
+            width: 100%;
+
+        }
+
     }
+
 
     .tile_description{
         font-size: 14px;
@@ -126,13 +149,14 @@
 
         border-radius: 6px;
 
+
         .tile_cart{
             color: $green_global;
             font-size: 28px;
         }
 
         &:hover{
-            background-color: $blue_global_10;
+            background-color: $blue_global_hsla_10;
           }
           
     }

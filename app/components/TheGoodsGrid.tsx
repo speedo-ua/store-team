@@ -3,7 +3,9 @@ import Pagination from "./Pagination";
 import TheGoodsTile from "./TheGoodsTile";
 
 const fetchProps = async () => {
-  const data = await fetch('http://localhost:3000/api');
+  const data = await fetch('http://localhost:3000/api', {
+    next: {revalidate: 5}
+  });
   return data.json();
 }
 
@@ -21,8 +23,8 @@ const TheGoodsGrid = async () => {
         <div className="catalog-grid_container">
            
               {data.map((product:any, index:number) => 
-                      <div className="catalog-grid_container_item">
-                          <TheGoodsTile key={index} product={product} />
+                      <div key={index} className="catalog-grid_container_item">
+                          <TheGoodsTile product={product} />
                       </div>
               )}
 

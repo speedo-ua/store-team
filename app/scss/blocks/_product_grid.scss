@@ -20,7 +20,7 @@
         %btn {
             display: flex;
             align-items: center;
-            height: 32px;
+            height: 35px;
             font-size: 14px;
             color: $black_global;
             background-color: $white_global;
@@ -44,6 +44,7 @@
             @extend %btn;
             padding: 5px 5px 5px 20px;
             border: $border_grey;
+            
 
             &:hover {
                 background-color: $black_global_20;
@@ -131,6 +132,7 @@
 
     &_settings{
         width: 100%;
+        min-width: 240px;
         /* border-left: $tin_line solid $black_global_20; */
         border-right: $tin_line solid $black_global_20;
         border-bottom: $tin_line solid $black_global_20;

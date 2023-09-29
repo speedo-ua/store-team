@@ -17,7 +17,7 @@ const TheHeader = () => {
                             Catalog
                     </button>
                 <div className="header_search_form">
-                        <input type="text" className="header_search_input" placeholder="I'm searching.." />
+                        <input type="text" name="searchForm" className="header_search_input" placeholder="I'm searching.." />
                         <button type="submit" className="header_search_submit">Search</button>
                 </div>
 

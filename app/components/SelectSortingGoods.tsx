@@ -1,7 +1,7 @@
 const SelectSortingGoods = () => {
 
     return (
-        <select defaultValue={"rating"}>
+        <select name="sortingType" defaultValue={"rating"}>
             <option value="cheap">Cheap to expensive</option>
             <option value="expensive">Expensive to cheap</option>
             <option value="novelty">Novelty</option>

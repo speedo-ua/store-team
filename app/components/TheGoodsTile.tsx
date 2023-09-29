@@ -15,8 +15,8 @@ interface IProduct {
     img: string;
     rating: number;
     review: number;
+    promo: string;
  }
-
 
 const TheGoodsTile = ({product}: {product:IProduct}) => {
     
@@ -25,14 +25,15 @@ const TheGoodsTile = ({product}: {product:IProduct}) => {
         return (
             <div className="goods-tile">
                     <div className="tile_top_promo">
-                        <div className="best_sale">Top Sale</div>
+                        <div className={"promo " + product.promo}>{product.promo}</div>
                     </div>
                     <div className="tile_top_actions">
                         <button className="tile_top_actions_btn"><FavorIcon style="favor_svg"/></button>
                         <button className="tile_top_actions_btn"><ScaleIcon style="compare_svg"/></button>
                     </div>
-                
-                <img src={`/img/product/${product.id}/${product.img}`} title={product.title} alt={product.title} className="img_tile"/>
+                <div className="img_container">
+                    <img src={`/img/product/${product.id}/${product.img}`} title={product.title} alt={product.title} className="img_tile"/>   
+                </div>
                 <div className="tile_description" title={product.title}>{product.title}</div>
                 <div className="tile-rating_block">
                     <div className="tile-rating">
