@@ -15,7 +15,7 @@ const TheGoodsGrid = async () => {
   const data = await fetchProps();
  
 
-  // console.log (data)
+  console.log (data)
 
   return(
       
